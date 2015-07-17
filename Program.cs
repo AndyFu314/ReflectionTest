@@ -13,9 +13,16 @@ namespace ReflectionTest3
             Person person = new Person();
             person.Load();
 
-            if ((person.Age > 0) && (person.Name != string.Empty))
+            if ((person.Age > 0) && (person.Name != String.Empty) && (person.Sex != String.Empty))
             {
-                Console.WriteLine("Hi " + person.Name + " - you are " + person.Age + " years old!");
+                if (person.Sex == "male")
+                {
+                    Console.WriteLine("Hi, Mr. " + person.Name + " - you are " + person.Age + " years old!");
+                }
+                else if (person.Sex == "female")
+                {
+                    Console.WriteLine("Hi, Miss. " + person.Name + " - you are " + person.Age + " years old!");
+                }
             }
             else
             {
@@ -39,6 +46,7 @@ namespace ReflectionTest3
     {
         private int age = -1;
         private string name = String.Empty;
+        private string sex = String.Empty;
 
         public void Load()
         {
@@ -105,6 +113,12 @@ namespace ReflectionTest3
         {
             get { return name; }
             set { name = value; }
+        }
+
+        public string Sex
+        {
+            get { return sex; }
+            set { sex = value; }
         }
     }
 }
