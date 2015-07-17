@@ -10,15 +10,35 @@ namespace ReflectionTest3
     {
         static void Main(string[] args)
         {
-            Person p = new Person();
-            p.Save();
+            Person person = new Person();
+            person.Load();
+
+            if ((person.Age > 0) && (person.Name != string.Empty))
+            {
+                Console.WriteLine("Hi " + person.Name + " - you are " + person.Age + " years old!");
+            }
+            else
+            {
+                Console.WriteLine("I don't seem to know much about you. Please enter the following information:");
+                Type type = typeof(Person);
+                PropertyInfo[] properties = type.GetProperties();
+                foreach (PropertyInfo propertyInfo in properties)
+                {
+                    Console.WriteLine(propertyInfo + ":");
+                    person.SetProperty(propertyInfo, Console.ReadLine());
+                }
+                person.Save();
+                Console.WriteLine("Thank you! I have saved your information for next time.");
+            }
+
+            Console.ReadKey();
         }
     }
 
     public class Person
     {
         private int age = -1;
-        private string name = String.Empty;
+        private string name = string.Empty;
 
         public void Load()
         {
