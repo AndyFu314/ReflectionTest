@@ -1,0 +1,17 @@
+# ³o¬Oµù¸Ñ
+[Oo]bj
+[Bb]in
+[Tt]emp
+*.user
+*.suo
+*.[Cc]ache
+*.bak
+*.log 
+*.DS_Store
+*.exe
+*.pdb
+[Tt]est[Rr]esult*
+[Tt]humbs.db 
+_ReSharper.*
+*.resharper
+Ankh.NoLoad
