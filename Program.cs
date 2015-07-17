@@ -38,7 +38,7 @@ namespace ReflectionTest3
     public class Person
     {
         private int age = -1;
-        private string name = string.Empty;
+        private string name = String.Empty;
 
         public void Load()
         {
