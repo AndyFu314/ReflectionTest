@@ -1,0 +1,6 @@
+D:\practice\ReflectionTest3\bin\Debug\ReflectionTest3.exe.config
+D:\practice\ReflectionTest3\bin\Debug\ReflectionTest3.exe
+D:\practice\ReflectionTest3\bin\Debug\ReflectionTest3.pdb
+D:\practice\ReflectionTest3\obj\Debug\ReflectionTest3.csprojResolveAssemblyReference.cache
+D:\practice\ReflectionTest3\obj\Debug\ReflectionTest3.exe
+D:\practice\ReflectionTest3\obj\Debug\ReflectionTest3.pdb
